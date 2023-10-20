@@ -57,7 +57,7 @@ The contract can be utilized to create and manage a custom token on the Ethereum
 
 2. **Deployment:**
    - Move to the "Deploy & Run Transactions" tab on the left sidebar.
-   - Choose the "token" contract from the dropdown menu.
+   - Choose the "mytoken" contract from the dropdown menu.
    - Click the "Deploy" button to deploy the contract.
 
 3. **Interaction:**
