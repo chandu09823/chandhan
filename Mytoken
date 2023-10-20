@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract MyToken {
+
+    string public Name = "Chandhan M";
+    string public Abbreviation = "CM";
+    uint256 public totalAmount = 800;
+
+    mapping(address => uint256) public balances;
+
+
+    function mint(address account, uint256 value) public {
+        require(account != address(0), "Invalid address");
+        totalAmount += value;
+        balances[account] += value;
+    }
+
+    function burn(address account, uint256 value) public {
+        require(balances[account] >= value, "Insufficient balance");
+        totalAmount -= value;
+        balances[account] -= value;
+    }
+}
